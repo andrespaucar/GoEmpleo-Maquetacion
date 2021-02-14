@@ -1,0 +1,358 @@
+.container-empleos{
+    display: grid; 
+    grid-template-areas: 'formempleo  formempleo formempleo'
+                        'contentmainemp contentmainemp contentmainemp';
+    
+    .formulario-empleo{
+     grid-area: formempleo;
+     background: $dark;
+     display: grid;
+     justify-content: center;align-items: center;
+    }
+    .content-main-emp{
+        grid-area: contentmainemp;
+        // background: burlywood;
+        display: grid;
+    }
+    
+}
+// Chip-busc
+.content-chip-busc{
+    // margin-top: .5em;
+    // max-width: 80%;
+    // justify-self: start;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.chip-busc{
+    margin-top: .5em;
+    margin-right: .5em;
+    margin-bottom: .3em;
+    font-size: .8em ;
+     position: relative;
+    padding:.4em .55em;
+    border-radius: 10px;
+    background: $primary;
+    color:$white;
+    .close-chip{
+       border-radius: 50%;
+       background: $white;
+       padding:0px 4px;
+       text-align: center; 
+       color:$primary;
+       
+    }
+}
+// Etyles basic de los Filtros
+.card-fil{ 
+    text-align: center;
+    .card-title-fil{ 
+        font-size: .88em;
+        font-weight: bold;
+        padding: 1em;
+         background: $bgcardtitlefil;
+     }
+     .card-lists-items{
+         background: $bgcardcontentfil;
+         padding:.5em 0;
+         font-size: .94rem;
+         height: 10rem;
+         line-height: 1.6em;
+        overflow-y: scroll; 
+     }
+     a:hover{
+         text-decoration: underline;
+     }
+} 
+.filtros{
+    grid-area: filtro;
+    // background: $lightblue;
+    display:grid;
+    padding-left: 1em;
+    padding-right: 1em;
+   
+}
+.empleos{
+    grid-area: empleos;
+     
+    display: flex;
+    flex-direction: column;
+    
+    // grid-row-gap: 1em;
+}
+.empleo{position: relative;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    padding: 1em;
+    background: $white;
+    transition: box-shadow .23s ease-in;
+    display: flex;  //A COMENTAR 
+    // flex-direction: column;
+    
+}
+.content-empleo{
+    .title-emp{
+        color:$primary;
+        font-size: .99em;
+    }
+    .title-emp:hover{
+     text-decoration: underline;
+    }
+    .content-emp-ubi{
+        margin-top: 4px;   
+        margin-bottom: 4px;
+    }
+    .name-empresa{
+        font-size: .94em;
+        color:$primary;
+    }
+    .name-ubicacion{
+        font-size: .86em;
+        color: #8b8b8b;
+        font-weight: bold; 
+    }
+    .descripcion{ 
+        font-size: .89em;
+    }
+    .dhp{
+        margin-top: 3.2px;
+        color: #8b8b8b;
+        font-size: .85em;
+    }
+}
+.brand-empresa{
+    width: 10rem;
+    height: auto;
+    text-align: center;
+   align-self: center;
+    img{
+        max-width: 64%;
+        height:auto;   
+    }
+}
+.anuncios{
+    grid-area: anuncio;
+    // background: $colorADS;
+    // display: flex; 
+}
+.urr{ 
+    color: $white;
+    position: absolute; 
+    font-size: 12px; 
+}
+
+.ur{background: $danger;
+    position: absolute;
+    top: -16px; 
+    left: -16px;
+    // justify-self: end;
+    padding: 0 .35em;
+    height:18px ;
+    width: 80px; 
+    text-align: center; 
+    border-top-left-radius: 2px; 
+    &:after{
+        position: absolute;
+        content: '';
+        // width: 18px;
+        // height: 18px;
+        background:  $danger; 
+        // border-radius:4px;
+        height: 16px;
+        width: 16px; 
+        right: -7px;
+        transform: rotate(45deg);
+        border-radius: 4px;
+    }
+}
+
+.emp_ur{
+   
+    border:2px solid #f63434;
+    background:#fffbe7;
+}
+// .emp_ur::before{
+//     position: absolute;
+//     top: 0px; 
+//     left: 0;
+//     // left: -16px;
+//     content: 'Urgente';
+//     padding: 0 .35em;
+//     height:18px ;
+//     width: 80px; 
+//     color: $white;
+//     font-size: 12px; 
+//     text-align: center;
+//     background: $danger;
+//     border-top-left-radius: 2px; 
+// }
+.emp_dest{
+    border:2px solid $yellow;
+    background:#faf4d6;
+}
+.empleo:hover{
+    
+    // transform: scale(1.02);
+    box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.anuncio-fil{ 
+    display: flex;
+    flex-direction: column;
+    // background: red;
+    align-items: center;
+    
+    .anuncio-fl{
+        width: 160px;text-align: center;
+       height: 600px;background: $yellow;
+       
+    }
+}
+.pagination{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+  a{ 
+      color:  $primary;
+      display: block;
+      padding: 8px 16px;
+    //   border-radius: 5px;
+      border:.5px solid  rgb(207, 207, 207);
+  }
+  a.active{
+      background: $primary;
+      color: $white; 
+  }
+  a:hover:not(.active) {
+      background: #cecece; 
+  }
+   
+}
+
+//  MEDIA MOBILES
+@media screen and (max-width: 39.987rem){
+    .content-main-emp{
+        grid-template-areas: 'filtro'
+                             'empleos'
+                             'anuncio';
+       margin-top: 1em;
+    }
+   .mostrar-filtro{
+     display: block;
+   }
+    .ocultar-filtro{
+        display: none;
+    }
+    .card-list{
+        
+        a{ 
+            font-size: .846em;
+            display: block;
+            padding: 0.2em;
+        }
+    }
+    .card-fil{
+        margin-top: .89em;
+    } 
+    
+   .empleos{
+        margin-top: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .anuncio{
+        display: none;
+    }
+    .anuncio-fl{
+        display: none;
+    }
+    .anuncios{
+        // align-self: center;
+       justify-self: center;
+    }
+   .anuncio-mobil{
+       margin-bottom: 0.84em;
+      background:$yellow;
+      height: 100px;
+      width: 320px;
+   }
+}
+
+@media screen and (min-width:40rem){
+    .content-main-emp{
+        grid-template-areas: 'filtro empleos ';
+                          
+        grid-template-columns: .7fr 1.8fr ;  
+        margin-top: 1em;
+    }
+    .anuncios{
+        display: none;
+    }
+    .empleos{
+        margin-right: 1em;
+    }
+    .filtros{
+        padding-left: 1em;
+        padding-right: 1em;
+         
+    }
+    .card-fil{
+        padding-bottom: .89em;
+         
+       }
+    .filtros > button{
+        display: none;
+    }
+    .anuncio-mobil{
+        display: none;
+    }
+}
+//    DESKTOP
+@media screen and (min-width:64rem){
+    .content-main-emp{
+        grid-template-areas: 'filtro empleos anuncio';
+                          
+        grid-template-columns: .4fr 1fr .45fr ;
+        // grid-gap: 1em;
+    }
+    .filtros{
+        padding-left: 1em;
+        padding-right: 1em;
+         
+    }
+    .empleos{
+        margin-right:0;
+    }
+    .anuncios{
+        display: block; 
+        // background: rebeccapurple;
+        padding-left: 1em;
+        padding-right: 1em; 
+        position: relative;
+        // justify-self: center; 
+    } 
+    .anuncio-one{ 
+        height:600px;  
+        text-align: center; 
+    }
+    .anuncio{
+        height:48% ; 
+        // background: rgb(12, 175, 47);
+        text-align: center; 
+    }
+    .st{
+        position:  sticky; position: -webkit-sticky;
+        top:10px; 
+        width: 300px; 
+        background: $yellow;
+        text-align: center;  
+    } 
+    .anuncio-second{  
+        margin-top: 8px;
+        height:600px;   
+        text-align: center;   
+    }
+    
+
+}

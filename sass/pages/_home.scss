@@ -1,0 +1,126 @@
+
+@mixin form-empleo-buscar { 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: var(--heigth-form-empleo-buscar-mobil); 
+
+}
+// INICIO CLASE FORMULARIO-BUSCAR
+.container-home{
+    display: grid;
+    grid-template-areas: 'formEmpleo'
+                         'categorias';
+                         
+    grid-template-rows: auto auto auto;
+    .form-empleo-buscar{
+       grid-area: formEmpleo;
+       @include form-empleo-buscar;
+    }
+    .categorias{
+        grid-area: categorias;
+        background: var(--bg-categorias);
+       
+        
+    }
+    
+}
+
+
+
+select > option{
+     font-size: 1.2em;
+}
+
+
+
+.formulario{
+    display: grid;
+    // grid-gap: .8em;
+    padding: 1.8em;
+    // background: var(--bg-formulario);
+    form{ 
+        display: grid;
+        grid-gap: .8em;
+    } 
+}
+
+.frase{
+    padding-top: .7em;
+    color:$white;
+    text-align: center;
+}
+// FIN CLASE FORMULARIO-BUSCAR
+// INICIO DE LAS CLASES CATEGORIAS
+.container-home .categorias{
+    display: grid; 
+    padding: 1em;
+    // grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit,minmax(8.5rem,1fr));
+    // grid-template-rows: auto auto  ;
+    grid-gap: 1em;
+}
+.categorias > .categoria{
+    justify-self: center;
+    padding: .8em; 
+}
+.title-cat{
+    font-weight: bold;
+    color:$primary; margin-bottom: 0.4em;
+}
+
+.list-cat > .item-cat{
+   line-height: 1.5em;
+   font-size: .9em;
+}
+.item-cat > .chip-cat{
+    border-radius: .8rem;
+    color: $white;
+    font-size: .7em;
+    padding: .5em;
+    background: $primary;
+    margin-left: .3rem;
+}
+//  MEDIA MOBILES
+@media screen and (max-width: 39.987rem){
+    .form-group{
+        position: relative;
+       display: flex;flex-direction: column;
+    }
+    .frase{
+       font-size: .8em; 
+    }
+    // Categorias
+    // .categorias{
+    //     grid-auto-flow: row;
+    //     grid-template-columns: 
+    // }
+}
+//    DESKTOP
+@media screen and (min-width:40rem){
+    .formulario{
+        form{
+         grid-auto-flow: column; 
+         grid-template-columns: 2.5fr 1.5fr 1.5fr;
+         grid-template-rows: auto;
+        }
+    }
+    .container-home   .form-empleo-buscar{
+        height: var(--heigth-form-empleo-buscar-desktop);
+    }
+     
+    .name_empleo{
+         width : 100%;
+    }
+    .btn-buscar{
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .frase{
+        font-size: .87em;
+    }
+    // Categorias
+    // .categorias{
+    //     grid-auto-flow: column;
+    // }
+}

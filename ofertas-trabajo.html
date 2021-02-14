@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Empleos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="navbar-brand">Logo</a>
+            <button type="button" id="menu-btn" class="menu-btn "><i class="fas fa-bars"></i></button>
+            <ul class="navbar-nav" id="menu">
+                <li class="nav-item"><a href="#" class="nav-link"> Soy Empresa</a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-pe"> Publicar Empleo <span class="nuevo-nav">Nuevo</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-ing"> Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-empleos">
+
+        <div class="formulario-empleo">
+            <div class="formulario">
+                <form action="#">
+                    <div class="form-group">
+                        <span class="ico-search"> </span>
+                        <input type="text" class='form-control name_empleo' name="name_empleo"
+                            placeholder="Nombre Empleo">
+                    </div>
+
+                    <div class="form-group">
+                        <span class="ico-location"> </span>
+                        <select class="form-control" name="locations">
+                            <option value>Lugar</option>
+                            <option value="1">Location Item 1</option>
+                            <option value="2">Location Item 2</option>
+                            <option value="3">Location Item 3</option>
+                            <option value="4">Location Item 4</option>
+                            <option value="5">Location Item 5</option>
+                            <option value="6">Location Item 6</option>
+                            <option value="7">Location Item 7</option>
+                            <option value="8">Location Item 8</option>
+                            <option value="9">Location Item 9</option>
+                            <option value="10">Location Item 10</option>
+                            <option value="11">Location Item 11</option>
+                            <option value="12">Location Item 12</option>
+                            <option value="13">Location Item 13</option>
+                            <option value="14">Location Item 14</option>
+                            <option value="15">Location Item 15</option>
+                            <option value="16">Location Item 16</option>
+                            <option value="17">Location Item 17</option>
+                            <option value="18">Location Item 18</option>
+                            <option value="19">Location Item 19</option>
+                            <option value="20">Location Item 20</option>
+                            <option value="21">Location Item 21</option>
+                            <option value="22">Location Item 22</option>
+                            <option value="23">Location Item 23</option>
+                            <option value="24">Location Item 24</option>
+                            <option value="25">Location Item 25</option>
+                            <option value="26">Location Item 26</option>
+                            <option value="27">Location Item 27</option>
+                            <option value="28">Location Item 28</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary btn-buscar" value="Buscar">
+
+                </form>
+                <p class="frase">&#9757; Elige un trabajo que te guste, y no tendras que trabajar ni un dia tu vida 😃
+                    &#9889;</p>
+                <div class="content-chip-busc">
+                    <p class="chip-busc">Practicante de Sistemas <a href="#" class="close-chip"> x </a>
+                    </p>
+                    <p class="chip-busc"> Sistemas <a href="#" class="close-chip"> x </a>
+                    </p>
+                    <p class="chip-busc">Practicante de Sistemas <a href="#" class="close-chip"> x </a>
+                    </p>
+                    <p class="chip-busc">Sistemas <a href="#" class="close-chip"> x </a>
+                    </p>
+                    <p class="chip-busc"> Pra Sistemas <a href="#" class="close-chip"> x </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-main-emp">
+            <div class="filtros ">
+                <button class="btn btn-danger" id="btn-m-f">Mostrar Filtros</button>
+                <div class="cards-filtro ocultar-filtro " id="filtros-section">
+                    <div class="card-fil">
+                        <p class="card-title-fil"> Fecha de Publicacion</p>
+                        <ul class="card-lists-items scroll-card">
+                            <li class="card-list"><a href="#">Hoy</a></li>
+                            <li class="card-list"><a href="#">Hace 3 dias</a></li>
+                            <li class="card-list"><a href="#">Esta Semana</a></li>
+                            <li class="card-list"><a href="#">Último mes</a></li>
+                            <li class="card-list"><a href="#">Último mes</a></li>
+                            <li class="card-list"><a href="#">Último mes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="card-fil ">
+                        <p class="card-title-fil"> Departamento</p>
+                        <ul class="card-lists-items scroll-card">
+                            <li class="card-list"><a href="#">Lima</a></li>
+                            <li class="card-list"><a href="#">Pasco</a></li>
+                            <li class="card-list"><a href="#">Ancash</a></li>
+                            <li class="card-list"><a href="#">Apurimac</a></li>
+                            <li class="card-list"><a href="#">Arequipa</a></li>
+                            <li class="card-list"><a href="#">Ayacucho</a></li>
+                            <li class="card-list"><a href="#">Cajamarca</a></li>
+                            <li class="card-list"><a href="#">Callao</a></li>
+                            <li class="card-list"><a href="#">Cusco</a></li>
+                            <li class="card-list"><a href="#">Ica</a></li>
+                            <li class="card-list"><a href="#">Junin</a></li>
+                            <li class="card-list"><a href="#">La Libertad</a></li>
+                            <li class="card-list"><a href="#">Loreto</a></li>
+                            <li class="card-list"><a href="#">Lambayeque</a></li>
+                            <li class="card-list"><a href="#">Tumbes</a></li>
+                            <li class="card-list"><a href="#">Madre De Dios</a></li>
+                            <li class="card-list"><a href="#">Moquegua</a></li>
+                            <li class="card-list"><a href="#">Loreto</a></li>
+                            <li class="card-list"><a href="#">Lambayeque</a></li>
+                            <li class="card-list"><a href="#">San Martin</a></li>
+                            <li class="card-list"><a href="#">Tacna</a></li>
+                            <li class="card-list"><a href="#">Tumbes</a></li>
+                            <li class="card-list"><a href="#">Ucayali</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-fil anuncio-fil">
+                        <div class="anuncio-fl">
+                            <h2>160 * 600</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="empleos">
+                <div class="empleo emp_ur">
+                    <div class="urr">
+                        <span class="ur">Urgente</span>
+                    </div>
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico Rubro
+                                Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam
+                        </p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/entel-peru.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="empleo emp_dest">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/bcp.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="empleo emp_ur">
+                    <div class="urr">
+                        <span class="ur">Urgente</span>
+                    </div>
+
+                    <div class="content-empleo ">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/claro.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/bembos.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/interbank.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa" style="display:none">
+                        <!-- <img src="images/interbank.png" alt=""> -->
+                    </div>
+
+                </div>
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa" style="display:none">
+                        <!-- <img src="images/interbank.png" alt=""> -->
+                    </div>
+
+                </div>
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa" style="display:none">
+                        <!-- <img src="images/interbank.png" alt=""> -->
+                    </div>
+
+                </div>
+
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/pardos.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/pardos.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/pardos.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="empleo">
+                    <div class="content-empleo">
+                        <h3> <a href="#" class="title-emp">Asesor técnico comercial distribución Rubro Eléctrico </a>
+                        </h3>
+                        <div class="content-emp-ubi">
+                            <p class="name-empresa">Nombre empresa</p>
+                            <p class="name-ubicacion">Departamento, Privincia </p>
+                        </div>
+                        <p class="descripcion">Lorem ipsum dolor sit amet cons
+                            omnis ad aut id necessitatibus, sit minus. Nulla, eveniet saepe quas facere laboriosam</p>
+                        <p class="dhp">hoy, 11:55 am</p>
+                    </div>
+                    <div class="brand-empresa">
+                        <img src="images/pardos.jpg" alt="">
+                    </div>
+
+                </div>
+                <!-- INICIO PAGINACION -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">Siguiente</a>
+                </div>
+
+
+
+            </div>
+
+            <div class="anuncios">
+                <!--  ANUNCIOS ADS DESKTOP :v<  -->
+                <div class="anuncio">
+                    <div class="st anuncio-one">
+                        300 x 600
+                    </div>
+                </div>
+                <div class="anuncio ">
+                    <div class="st anuncio-second">
+                        300 x 600
+                    </div>
+                </div>
+
+                <!-- ADS MOBIL -->
+                <div class="anuncio-mobil">
+                    <h2>320 x 100</h2>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="content-footer">
+            <div class="des fa-2xcription-footer">
+                <p>Nombre del WEB cuenta con ofertas de emplo actualizadas a diario. Nuestro
+                    buscador localiza todos los trabajos ofertados en Perú. Buscar los mejores
+                    trabajos, empleos en Perú en nuestra web.</p>
+            </div>
+            <div class="des-horarios">
+                <strong>Lunes a viernes:</strong> 9:00am a 1:00pm y 2:30pm a 6:30 pm <br>
+                <strong>Sábados:</strong> 9:00am a 1:00pm <br>
+                <strong>Anuncios:</strong> 99999999 <br>
+                <strong>Apertura de Agencia</strong> 9999999 <br>
+                <strong> Email:</strong> ads@web.com.pe <br>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+        <p class="copy">Todos los derechos reservados ® Copyright 2019 </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

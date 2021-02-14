@@ -1,0 +1,38 @@
+footer{
+    background:#222;
+    color:$white;
+    padding: 1em;
+    display: grid; 
+ }
+footer > .content-footer{
+     font-size: .84em;
+     padding: 1em;
+     display: grid; 
+     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+
+}
+.description-footer{
+   justify-self: center;
+}
+.des-horarios{
+    justify-self: center;
+    text-align: center;
+    line-height: 18px;
+    strong{
+        letter-spacing:1px;
+    }
+}
+.redes{
+    // justify-self: center;
+    display: flex;
+    justify-content: space-evenly;
+     i{
+        color:white;
+      
+     }
+     
+}
+footer > .copy{
+    text-align: center;
+    font-size: .8em;
+}

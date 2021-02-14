@@ -1,0 +1,13 @@
+ 
+.btn{
+    background: $defaultbtn;
+    color: $white;
+    border:none;
+    padding: .8em;
+    border-radius: .4rem;
+    cursor:pointer;
+}
+.btn-primary{background: $primary;}
+.btn-danger{ background: $danger; }
+.btn-danger{background: $danger;}
+.btn-purple{background: $purple;}

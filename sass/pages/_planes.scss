@@ -1,0 +1,80 @@
+.planes{
+   
+    margin-top: 1em;
+  
+    // background: red;
+    .titleplanes{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+     
+}
+.cards-planes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16.4rem,1fr));
+    grid-gap: 1em;
+    justify-content: center;
+}
+.card-content-body{
+    .precio{
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+     .list-card{
+         display: flex;
+         flex-direction: column;
+     }
+      
+}
+// .precio::before{
+//     content: 'S/ '
+// }
+.list-card {
+    font-size: .88em;
+    >li{
+       padding: .6em 0 ; 
+    // background: #e7e7e7; 
+    }
+    .item-card{
+        align-self: center;
+    justify-self: center;
+    }
+     
+}
+.v-ejem{
+    color: $primary;
+    text-decoration: underline;
+}
+.button-card{
+    padding: .4em 0;
+    display: block;
+    color:$white;
+    width: 10rem;
+    font-size: 1.1em;
+}
+.card-plan{
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    box-shadow: $box-shadow-sm;
+    transition: box-shadow .2s ease-out;
+    transform: scale(1);
+    justify-self: center;
+    background: $white; 
+    text-align: center;
+    font-size: .9em;
+    border-radius: 6px;
+   
+    .card-header{
+       padding: 0.6em;
+        color:$white;
+        font-size: .86em;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+    &:hover{
+        transition: transform .4s ease-out;
+        box-shadow: $box-shadow-lg;
+        transform: scale(1.02);
+    }
+}

@@ -1,0 +1,105 @@
+@mixin navbar-base(){
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding:$navbar-padding-y $navbar-padding-x ;
+    background: $white;
+    box-shadow: $box-shadow-sm;
+}
+@mixin navbar-mobil{
+    flex-direction: column;
+    z-index: 2;
+    position: fixed;margin: 0;
+    top: 0; bottom: 0; 
+    right:-100%;
+    background: $dark;
+    color:$white;
+    // transform: translateX(100%);
+    width: 70%; 
+   transition: right  .4s ease-out ;
+}
+@mixin afternuevo {
+     position: relative;
+    color: #Fff;
+    background: tomato;
+    padding: .29em;
+    font-size: .75em;
+    border-radius: .28em;
+}
+ 
+.navbar{
+    @include navbar-base();
+    .navbar-brand{
+        font-size: 1.15em;
+    }
+    .navbar-nav{
+     display: flex; 
+    }
+}
+ .navbar-brand:hover{
+    text-decoration: none; 
+}
+ 
+.nav-item > .nav-link,.navbar-brand {
+    display: block;
+    padding: .6em 1em;
+    border-radius: .28em;
+}
+.btn-buscar:hover{
+    background: darken($color: $primary, $amount: 8);
+}
+.nuevo-nav{
+    @include afternuevo;
+}
+//  MEDIA MOBILES
+@media screen and (max-width: 39.987rem){
+    .navbar > .menu-btn {
+       background: none;
+       font-size: 1em;
+       padding: 0 1em 0 0;
+       border: none; outline: none;
+       cursor:pointer;
+        
+    }
+    .navbar-nav{
+       @include navbar-mobil();
+       .nav-item{ 
+           color: $white; 
+           font-size: .84em;
+       }
+    }
+    
+    .mostrar-nav{ 
+        right: 0;
+    }
+    .nav-item > .nav-link{
+        display: block;
+       padding: 1.5em; border-radius:0;
+}   
+
+.nav-link:not(.btn-pe){
+  background: none; 
+  border-bottom: 2px solid  darken($dark,5);
+  color: $white;
+  &:hover{
+      background: darken($dark,10); 
+  }  
+  } 
+}
+// PARA DESKTOP
+@media screen and (min-width: 40rem){
+    .menu-btn{
+        display: none;
+    }
+   
+    .navbar .navbar-nav{
+        flex-direction: row;
+         
+    }
+    .nav-item{
+        margin:$nav-margin;
+        font-size: .89em;
+    }
+  
+}
+

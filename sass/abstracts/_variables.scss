@@ -1,0 +1,48 @@
+// COLORS
+$primary : #0D65BC !default;     $yellow: #fbd92e !default;
+$secondary: #FE003D !default;    $colorBorder: #707070 !default;
+$danger : #F63434 !default;      $dark : #172634 !default;
+$purple: #6A60F5 !default;       $black :#000 !default;
+$lightblue: #60CCF5 !default;    $default : #e3e3e3  !default ;
+$success: #81D742 !default;      $white : #fff  !default;
+$colorADS :#FE6161 !default;     $defaultbtn:#707070 !default;
+$colorInput: #555 !default;      $bgcardtitlefil:#c5c5c5 !default;
+$colorlistfilter: #555 !default; $bgcardcontentfil:#ffffff  !default;
+//  VARIABLES CSS
+:root{
+   --bg-navbar : #fff;
+   --bg-categorias : #fff;
+   --heigth-form-empleo-buscar-mobil:20rem;
+   --heigth-form-empleo-buscar-desktop:16rem;
+   --bg-formulario:rgba(0, 0, 0, 0.4);
+}
+
+// Map-Colors
+$colors :(
+   primary : $primary,
+   secondary : $secondary,
+   danger : $danger,
+   success: $success,
+   purple:$purple,
+   lightblue: $lightblue,
+);
+
+// Box - Shadow
+$box-shadow-sm:  0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow:     0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg:  0 1rem 3rem rgba($black, .175) !default;
+
+
+
+// NavBar
+$navbar-padding-x : 1em;
+$navbar-padding-y : .6em ; // 2vmin
+//  Navbar Deskop
+$nav-margin: 0 .6rem;
+
+ 
+
+
+
+
+

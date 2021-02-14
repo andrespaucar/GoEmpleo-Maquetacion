@@ -1,0 +1,172 @@
+.container_vista_emp{
+    display: grid;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    // grid-gap: 1em;
+    .ads_left{
+        grid-area:adsleft;
+        background: $colorADS;
+        // width: 300px;
+        // height: 600px;
+    }
+    .content-vist-emp{
+        grid-area: contentemp;
+        background:$white;
+    }
+    .ads_right{ 
+        grid-area: adsright;
+        background: $colorADS;
+        // justify-self: center;
+    }
+} 
+.content_header_emp{
+        padding: 1em;
+        // color:#8b8b8b;
+        display: flex; 
+         .title-empleo{ 
+           font-size: 1.23em;
+           color:$primary;
+        //    a{
+        //        color:$primary;
+        //        display: block;
+        //    }
+        }
+        .nameempresa{
+            margin-top: 5px;
+            color:$primary;
+            font-size: 1.09em;
+        }
+        p:not(.nameempresa){
+            font-size: .96em;
+            color:#8b8b8b;
+        }
+}
+.content-body{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+.emp-lug-time{
+        
+    font-size: .9em;
+}
+.logo_emp{
+    width: 10rem;
+    height: auto;
+    text-align: center;
+    justify-self: center;
+   align-self: center;
+    img{
+        max-width: 70%;
+        height:auto;   
+    }
+}
+
+.description-emp{
+    font-size: .9em;
+}
+.xh{
+    width: 8rem;
+    font-size: .8em;
+    font-weight: bold;
+    &:hover{
+        background: darken($color: $primary, $amount: 6)
+    }
+}
+.ads-left-start{ //ADS
+    width:160px;
+    height: 600px;
+    
+    
+    background: yellow;
+}
+.ads-right-end{ //ADS
+    width: 300px;
+    height: 250px;
+    background: yellow;
+}
+.cont-right-end{
+ text-align: center;
+ align-self: center;
+margin: 1em;
+}
+.roe{
+    display: block;
+    background: $danger;
+    // padding: 1em;
+    // width: 80%;
+    border-radius: 10px; 
+    color:white; 
+    padding: .6em  ;
+    &::before{
+        content: "\02709";
+        //  position: a;
+          
+         font-size: 19px;
+
+    }
+}
+//  MEDIA MOBILES
+@media screen and (max-width: 39.987rem){
+    .container_vista_emp{
+     grid-template-areas:'adsleft' 'contentemp';
+    // grid-template-columns:  1.2fr;
+    margin-left: 1em;margin-right: 1em;
+    grid-gap: 1em;
+    }
+    .ads_left_desktop,.ads_right{
+        display: none;
+    }
+    .ads_banner_mobile{
+       width: 320px;
+       height: 100px;
+       background: $colorADS;
+    }
+   
+   
+}
+@media screen and (min-width:40rem){
+    .container_vista_emp{
+        grid-template-areas:'contentemp adsright';
+        grid-template-columns:  1fr auto;
+        // grid-gap: 1em;
+    }
+    .content-vist-emp{
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    .ads_banner_mobile,.ads_left_desktop{
+        display: none;
+    }
+    .ads_right{
+        display: block;
+        margin-right: 1em;
+        // width: 240px;
+    }
+}
+@media screen and (min-width:64rem){
+    .container_vista_emp{
+        grid-template-areas:'adsleft contentemp adsright';
+        grid-template-columns: auto 1fr auto;
+    } 
+    .content_header_emp{
+        .nameempresa{
+            color:$primary;
+            font-size: 1.2em;
+        }
+        p:not(.nameempresa){
+            font-size: 1em;
+            color:#8b8b8b;
+        }
+        .title-empleo{
+          font-size: 1.5em;
+        }
+    }
+    .ads_left_desktop,.ads_right{
+        display: block;
+    }
+    .ads_left{
+        margin-left: 1em;
+    }
+     
+}
